@@ -1,16 +1,12 @@
-pares = 0
-impares = 0
+nomes = []
 
 
-for i in range(10):
-    numero = int(input(f"Digite o {i + 1}º número: "))
+for i in range(5):
+    nome = input(f"Digite o {i+1}º nome: ")
+    nomes.append(nome)
 
 
-    if numero % 2 == 0:
-        pares += 1
-    else:
-        impares += 1
+contagem_a = sum(1 for nome in nomes if nome.lower().startswith('a'))
 
 
-print(f"Quantidade de números pares: {pares}")
-print(f"Quantidade de números ímpares: {impares}")
+print(f"Quantidade de nomes que começam com a letra 'A': {contagem_a}")
