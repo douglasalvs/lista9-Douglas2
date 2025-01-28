@@ -8,5 +8,4 @@ for i in range(5):
 
 contagem_a = sum(1 for nome in nomes if nome.lower().startswith('a'))
 
-
 print(f"Quantidade de nomes que começam com a letra 'A': {contagem_a}")
